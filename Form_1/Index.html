@@ -3,18 +3,28 @@
 <head>
 	<meta charset="utf-8">
 	<title>Form - 1</title>
+	<link rel="stylesheet" type="text/css" href="css/Style.css">
 </head>
 <body>
 	<form>
-		<label for="name">Name: </label>
-		<input type="text" name="name" id="name"><br>
+		<fieldset>
+			<legend>Personal Information</legend>
+			<label for="name">Name: </label>
+			<input type="text" name="name" id="name" placeholder="Shivansh Gupta">
 
-		<label>Email: <input type="email" name="email"></label></br>
+		</br>
 
-		<label for="birth">DOB :  </label>
-		<input type="date" name="birth" value="birth"></br>
+			<label>Email: <input type="email" name="email" placeholder="abc@xyz.com"></label>
 
-		<input type="submit" value="Submit">
+		</br>
+
+			<label for="date">DOB : </label>
+			<input type="date" name="date" value="date">
+
+		</br>
+
+			<input type="submit" name="Submit">
+		</fieldset>	
 	</form>
 </body>
 </html>
