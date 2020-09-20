@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Form Validatiion-1</title>
+</head>
+<body>
+	<form>
+		<label for="zip_code">Zipcode with Patterns: </label>
+		<input type="text" name="zip_code" pattern="[0-9]{5}" required>
+
+		<br>
+
+		<label for="zip_code">Zipcode with Numbers: </label>
+		<input type="number" name="zip_code" min="00000" max="99999" required>
+
+		<br>
+
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>
