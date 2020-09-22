@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Checkbox-2</title>
+	<link rel="stylesheet" type="text/css" href="css/Style.css">
+	<script src="js/Function.js"></script>
+</head>
+<body>
+	<form action="https://github.com/shivansh052k" method = "GET">
+		<fieldset>
+			<legend>Your Name</legend>
+			<label for="F_Name">First Name: </label>
+			<input type="text" name="F_Name" id="F_Name" required>
+
+			<br>
+
+			<label for="L_Name">Last Name: </label>
+			<input type="text" name="L_Name" id="L_Name" required>
+
+			<br>
+
+			<label for="N_Name"><input type="checkbox" name="N_Name" id="N_Name" value="yes" onchange="NickNameFunction()">Do you have a Nickname?</label>
+
+			<br>
+
+			<div id="nick">
+				<label for="nickname">Please give your Nickname: </label>
+				<input type="text" name="nickname" id="nickname">
+			</div>
+
+			<br>
+
+			<input type="submit" value="Submit">
+		</fieldset>
+	</form>
+</body>
+</html>
