@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Form - Validation</title>
+	<link rel="stylesheet" type="text/css" href="css/Style.css">
+</head>
+<script src="js/Function.js"></script>
+<body>
+	<form>
+		<fieldset>
+			<legend>Email Validation</legend>
+			<label for="Email">Preferred Email Address: </label>
+			<input type="email" name="Email1" placeholder="abc@xyz.com" id="email_add" required>
+
+			<br>
+
+			<label for="Email">Repeat Email Address: </label>
+			<input type="email" name="Email2" placeholder="abc@xyz.com" id="email_repeat" required onchange="return check()">
+
+			<br>
+
+			<input type="submit" value="Submit" required onchange="return check()">
+		</fieldset>
+	</form>
+</body>
+</html>
